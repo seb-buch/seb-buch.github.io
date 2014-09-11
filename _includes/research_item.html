@@ -1,0 +1,9 @@
+<article class="research">
+    <a id="{{ post.simple_id }}"></a>
+    <h2 class="{{ post.type }}_title">{{ post.title }}</h2>
+
+    <div class="research_item">
+        <figure class="research_illustration" ><img src="{{ site.url }}/research/images/{{ post.illustration }}" /></figure>
+        {{ post.content }}
+    </div>
+</article>

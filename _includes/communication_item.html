@@ -1,0 +1,23 @@
+<article class="communication_item">
+<div class="container">
+    <div class="icon-box">
+        {% if post.type == "poster" %}
+            {% assign icon = "fa-image" %}
+        {% else %}
+            {% assign icon = "fa-comment-o" %}
+        {% endif %}
+        <i class="fa {{ icon }} fa-lg" title="{{ post.type }}"></i>
+    </div>
+    <div class="description">
+        <i class="fa fa-quote-left"></i>&nbsp;<span class="title">{{ post.title }}</span>&nbsp;<i class="fa fa-quote-right"></i><br />
+        <span class="spacer"></span><i class="fa fa-at fa-lg"></i>
+        <span class="event">{{ post.event }}</span> (<i class="fa fa-calendar"></i> {{ post.event_date }} - <i class="fa fa-map-marker"></i> {{ post.event_location }}
+        {% if post.event_url %}
+         - <a href="{{ post.event_url }}" title="Go to '{{ post.event }}' web site" target="_blank" class="icon"><i class="fa fa-home"></i></a>
+        {% endif %})
+        {% if post.pdf %}
+        &nbsp;&mdash;&nbsp;<a href="{{ post.pdf }}" title="Get a PDF version of this communication!" class="icon"><i class="fa fa-file-pdf-o fa-lg"></i></a>
+        {% endif %}
+    </div>
+</div>
+</article>

@@ -1,0 +1,27 @@
+---
+layout: default
+type: communications
+title: Communications
+permalink: /communications/
+---
+<p>Some of the things I have inflicted to the scientific community...</p>
+
+<h2 class="publications_title">Publications in peer-reviewed journals</h2>
+{% for post in site.categories.publication %}
+    {% include publication_item.html %}
+{% endfor %}
+
+<h2 class="proceedings_title">Conference proceedings</h2>
+{% for post in site.categories.proceedings %}
+    {% include proceedings_item.html %}
+{% endfor %}
+
+<h2 class="communications_title">Posters &amp; Talks (Last 5 years only)</h2>
+{% for post in site.categories.communication %}
+    {% include communication_item.html %}
+{% endfor %}
+
+<h2 class="awards_title">Ego-boosting stuff</h2>
+{% for post in site.categories.award %}
+    {% include award_item.html %}
+{% endfor %}

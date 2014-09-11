@@ -1,0 +1,19 @@
+<article class="publication_item">
+<div>
+    <i class="fa fa-quote-left"></i>&nbsp;<span class="title">{{ post.title }}</span>&nbsp;<i class="fa fa-quote-right"></i><br/>
+    <span class="authors">{{ post.authors }}</span><br/>
+    <span class="journal">{{ post.journal }}.</span> ({{ post.year }})
+    &mdash; DOI:
+    {% if post.open_access %}
+        {% assign link_icon = "fa-unlock" %}
+        {% assign link_title = "This article is accessible for free!" %}
+    {% else %}
+        {% assign link_icon = "fa-lock" %}
+        {% assign link_title = "Sorry, the publisher does not like open access!" %}
+    {% endif %}
+    <a href="http://dx.doi.org/{{ post.doi }}" target="_blank" title="{{ link_title }}">{{ post.doi }} <i class="fa {{ link_icon }}"></i></a>
+    {% if post.pdf %}
+    &nbsp;&mdash;&nbsp;<a href="http://dx.doi.org/{{ post.doi }}" title="This is just a PDF version of the draft!" class="icon"><i class="fa fa-file-pdf-o fa-lg"></i></a>
+    {% endif %}
+</div>
+</article>

@@ -1,0 +1,11 @@
+---
+layout: default
+type: tools
+title: Tools
+permalink: /tools/
+---
+<p>Here are the less unuseful tools I made that might be interesting to someone else. (Hopefully to make better tools)</p>
+
+{% for post in site.categories.tools %}
+{% include tools_item.html %}
+{% endfor %}

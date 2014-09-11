@@ -1,0 +1,19 @@
+<header>
+    <h1><a href="/">Sébastien <span class="myname">Buchoux</span></a></h1>
+    <nav class="main-nav">
+        <ul>
+            <li class="{% if page.home %}current{% endif %}">
+                <a href="/" title="Mandatory 'Me, myself and I' page">About</a>
+            </li>
+            <li class="{% if page.url contains '/research/' %}current{% endif %}">
+                <a href="/research/" title="Science stuff">Research</a>
+            </li>
+            <li class="{% if page.url contains '/communications/' %}current{% endif %}">
+                <a href="/communications/" title="Publications and related">Communications</a>
+            </li>
+            <li class="{% if page.url contains '/tools/' %}current{% endif %}">
+                <a href="/tools/" title="Geeky stuff">Tools</a>
+            </li>
+        </ul>
+    </nav>
+</header>

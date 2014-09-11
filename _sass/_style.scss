@@ -1,0 +1,312 @@
+/* Base */
+$font-stack: 'Open Sans', sans-serif;
+$width: 960px;
+$inner-margin: 10px;
+$header-height: 150px;
+$header-border: 10px;
+$color1: #142028;
+$color1-gradient: #1f323f;
+$color2: #518aae;
+$color3: #e0eb73;
+$color4: rgba(224, 235, 115, 0.75);
+$shadow-blur: 10px;
+$shadow-color: rgba(20, 32, 40, 0.3);
+$research-item-height: 400px;
+$tool-item-height: 256px;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  color: #12262d;
+  background-color: #e9e9e9;
+  text-align: justify;
+}
+
+.clear {
+  display: block;
+}
+
+.clear:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+a {
+  color: $color2;
+  text-decoration: none;
+  border-bottom: dotted 1px $color2;
+}
+
+a.noborder {
+  border-bottom: none;
+}
+
+.wrong {
+  text-decoration: line-through;
+}
+
+.container {
+  position: relative;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+img#myface {
+  float: right;
+  margin: 0 30px;
+  max-height: 160px;
+  box-shadow: 0 0 $shadow-blur $shadow-color;
+}
+/* Sections */
+header, section, footer {
+  width: $width;
+  margin: 0 auto;
+  padding: 0 $inner-margin;
+}
+
+/* Header */
+header {
+  border-bottom: solid 10px $color1;
+  height: $header-height;
+  background-image: url("/images/header.png");
+  position: relative;
+}
+header h1, nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: absolute;
+}
+header h1 {
+  font-weight: 300;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+  color: $color2;
+  left: $inner-margin;
+  bottom: -$header-border;
+}
+header h1 span.myname{
+  color: $color1;
+}
+header h1 a {
+  border: none;
+}
+nav ul {
+  right: $inner-margin;
+  bottom: -$header-border;
+}
+nav li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.main-nav li a {
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: none;
+  padding: 0 5px;
+  color: $color1;
+}
+.main-nav li:hover {
+  border-bottom: solid $header-border $color4;
+}
+.main-nav li.current {
+ border-bottom: solid $header-border $color3;
+}
+.main-nav li.current a, .main-nav li:hover a {
+  color: $color2;
+}
+
+/* Page body */
+section#page-body {
+  background-color: #fefefe;
+  box-shadow: 0 0 $shadow-blur $shadow-color;
+  min-height: 250px;
+  padding-top: 1px;
+  padding-bottom: 1em;
+}
+
+/* footer */
+footer {
+  padding-top: $header-border;
+  font-size: 12px;
+  color: $color2;
+}
+
+/* Titles */
+h2 {
+  position: relative;
+  font-size: 18px !important;
+  font-weight: normal;
+  color: $color3;
+  background-color: $color1;
+  background-image: linear-gradient(to bottom, $color1-gradient 0%, $color1 100%);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255,255,255,.2), inset 0 -1px 0 rgba(0,0,0,.3);
+  border-radius: 0 5px 5px 0;
+  line-height: 40px;
+  padding-left: ($inner-margin + 10px);
+  margin-top: 2em;
+  margin-left: -($inner-margin + 10px);
+  margin-bottom: 1em !important;
+}
+figcaption {
+  font-size: 13px;
+  font-style: italic;
+  color: #475a66;
+  text-align: center;
+}
+h2:before {
+content: "";
+position: absolute;
+top: -10px;
+left: 0;
+border-color: transparent $color1 $color1 transparent;
+border-style: solid;
+border-width: 5px;
+width: 0;
+height: 0;
+}
+h2:after {
+color: $color3;
+position: absolute;
+top: 0px;
+right: 10px;
+font-size: 30px;
+font-weight: 400;
+font-family: FontAwesome;
+text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+h2.about_title:after {
+  content: "";
+}
+h2.next_title:after {
+  content: "";
+}
+h2.contact_title:after {
+  content: "";
+}
+h2.publications_title:after {
+  content: "";
+}
+h2.books_title:after {
+  content: "";
+}
+h2.proceedings_title:after {
+  content: "";
+}
+h2.communications_title:after {
+  content: "";
+}
+h2.experimental_title:after {
+  content: "";
+}
+h2.analysis_title:after {
+  content: "";
+}
+h2.development_title:after {
+  content: "";
+}
+h2.soft_title:after {
+  content: "";
+}
+
+h2.awards_title:after {
+  content: "";
+}
+
+/* Communications */
+.communications article{
+  font-size: 13px;
+  margin-bottom: 1em;
+}
+.communications .journal{
+  font-style: italic;
+}
+.communications .event{
+  font-weight: bold;
+}
+.communications .icon{
+  border: none;
+  font-weight: bold;
+  text-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+.container .icon-box{
+  height: 100%;
+  width: 40px;
+  font-size: 20px;
+  vertical-align: middle;
+  display: table-cell;
+}
+.container .description{
+  display: table-cell;
+}
+.contact_container {
+  position: relative;
+  width: 700px;
+  height: 150px;
+  margin:0 auto;
+}
+
+.contact_container .container {
+  margin-top: 1em;
+}
+
+.contact_social {
+  text-align: center
+}
+.contact_social a{
+  text-decoration: none;
+  margin: 0 5px;
+  border: none;
+  vertical-align: middle;
+}
+ul.events_list li {
+  margin-bottom: 0.5em;
+}
+.research_item {
+  position: relative;
+  min-height: $research-item-height;
+}
+.research_illustration, .tools_illustration{
+  float: right;
+  margin: 0 10px 0 20px;
+  position: relative;
+  display: block;
+  z-index: 0;
+}
+.research_illustration img {
+  height: $research-item-height - $shadow-blur;
+  box-shadow: 0 0 0.5 * $shadow-blur $shadow-color;
+}
+.tool_item {
+  position: relative;
+  min-height: $tool-item-height;
+}
+.tool_links {
+  list-style: none;
+  margin: 1em auto;
+  font-size: 15px;
+}
+.tools_illustration img {
+  height: $tool-item-height - $shadow-blur;
+  box-shadow: 0 0 0.5 * $shadow-blur $shadow-color;
+}
+.tool_links li {
+  margin-bottom: 0.5em;
+}

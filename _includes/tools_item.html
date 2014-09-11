@@ -1,0 +1,30 @@
+<article>
+    <h2 class="{{ post.type }}_title">{{ post.title }}</h2>
+
+    <div class="post-content tool_item">
+        <figure class="tools_illustration" >
+            <img src="{{ site.url }}/tools/images/{{ post.illustration }}" />
+            {% if post.illustration-desc %}
+            <figcaption>
+                {{ post.illustration-desc }}
+            </figcaption>
+            {% endif %}
+        </figure>
+
+        {{ post.content }}
+
+        <p>Related links:</p>
+
+        <ul class="tool_links">
+            <li>
+                {% if post.site_url %}<i class="fa fa-home fa-lg"></i> <a target="_blank" href="{{ post.site_url }}" title="Go to {{ post.title }} site">{{ post.site_url }}</a>{% endif %}
+            </li>
+            <li>
+                {% if post.repo_url %}<i class="fa fa-code fa-lg"></i> <a target="_blank" href="{{ post.repo_url }}" title="Go to {{ post.title }} repo">{{ post.repo_url }}</a>{% endif %}
+            </li>
+            <li>
+                {% if post.docs_url %}<i class="fa fa-book fa-lg"></i> <a target="_blank" href="{{ post.docs_url }}" title="Go to {{ post.title }} docs">{{ post.docs_url }}</a>{% endif %}
+            </li>
+        </ul>
+    </div>
+</article>

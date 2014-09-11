@@ -1,2 +1,1 @@
-seb-buch.github.io
-==================
+Just another glorified self-promoting crappy website
