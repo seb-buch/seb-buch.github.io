@@ -10,7 +10,9 @@ Without membranes there would no cells so, quite obviously, they are an essentia
 Yet, their organization are not entirely clear and debates still exist concerning some aspects ("rafts" I am looking at you).
 Because the vast majority of biologically-active molecules has to interact with biomembranes at some point (whether via a receptor/transporter or directly), it is very important to understand what happens.
 
-Im my lab, our research is that field is focused on direct interactions between a molecule and the lipids from the membranes. Of course, a real biomembranes is a rather complex medium and it is hard to work with. This is why we use liposomes (Multi-Lamellar Vesicles) and vesicles (Small and Large Unilamellar Vesicles) as model membranes to investigate those molecules/membranes interactions.
+In my lab, our research in that field is focused on direct interactions between a molecule and the lipids from the membrane.
+Of course, a real biomembrane is a rather complex medium and it is hard to work with.
+This is why we use liposomes (Multi-Lamellar Vesicles), vesicles (Small and Large Unilamellar Vesicles) and supported bilayers as model membranes to investigate those molecules/membranes interactions.
  
 The kind of molecules we are working with can vary from small molecules (glycolipids, antioxydants) to small peptides.
 
