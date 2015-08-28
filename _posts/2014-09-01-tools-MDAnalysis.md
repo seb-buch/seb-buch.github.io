@@ -4,9 +4,9 @@ category: tools
 type: soft
 illustration: "mdanalysis.png"
 illustration-desc: "Stolen from <a target='_blank' href='https://pythonhosted.org/MDAnalysis/documentation_pages/visualization/streamlines.html'>here</a>" 
-site_url: "https://code.google.com/p/mdanalysis/"
-repo_url: "https://code.google.com/p/mdanalysis/source/checkout"
-docs_url: "https://pythonhosted.org/MDAnalysis/"
+site_url: "http://www.mdanalysis.org"
+repo_url: "https://github.com/MDAnalysis/mdanalysis"
+docs_url: "http://docs.mdanalysis.org/"
 ---
 
 Disclaimer: I am not the author of MDAnalysis, just a mere contributor.

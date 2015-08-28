@@ -3,9 +3,8 @@ title: "FATSLiM"
 category: tools
 type: soft
 illustration: "fatslim.png"
-site_url: "http://seb-buch.github.io/FATSLiM"
-repo_url: "https://github.com/seb-buch/FATSLiM"
-docs_url: "https://github.com/seb-buch/FATSLiM"
+site_url: "http://fatslim.github.io"
+repo_url: "https://github.com/FATSLiM/fatslim"
 ---
 
 FATSLiM (<i class="fa fa-quote-left"></i><b>F</b>ast <b>A</b>nalysis <b>T</b>oolbox for <b>S</b>imulations of <b>Li</b>pid <b>M</b>embranes<i class="fa fa-quote-right"></i>) is a software dedicated to the analysis of trajectories of <abbr title="Molecular Dynamics">MD</abbr> simulations of lipid membranes.
