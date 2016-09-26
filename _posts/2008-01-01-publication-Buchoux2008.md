@@ -1,6 +1,5 @@
 ---
-category: publication
-type: article
+category: article
 authors: "<b>Buchoux, S.</b>, Lai-Kee-Him, J., Garnier, M., Tsan, P., Besson, F., Brisson, A., & Dufourc, E. J."
 title: "Surfactin-triggered small vesicle formation of negatively charged membranes: a novel membrane-lysis mechanism"
 journal: "Biophysical Journal"

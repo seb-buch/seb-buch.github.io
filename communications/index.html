@@ -4,22 +4,76 @@ type: communications
 title: Communications
 permalink: /communications/
 ---
-<p>Some of the things I have inflicted to the scientific community...</p>
+{% capture limittime %}{{'now' | date: '%s'}}{% endcapture %}
+{% assign limittime = limittime | minus: 94608000 %}
 
-<h2 class="publications_title">Publications in peer-reviewed journals</h2>
-{% for post in site.categories.publication %}
-    {% include publication_item.html %}
+<p>Some of the things I somehow managed to inflict to the scientific community...</p>
+
+<h2 class="article_title">Articles in peer-reviewed journals ({{ site.categories.article | size }})</h2>
+{% for post in site.categories.article %}
+    {% include article_item.html %}
 {% endfor %}
 
-<h2 class="proceedings_title">Conference proceedings</h2>
+<h2 class="proceedings_title">Full articles published in conference proceedings ({{ site.categories.procarticle | size }})</h2>
+{% for post in site.categories.procarticle %}
+{% include proceedings_item.html %}
+{% endfor %}
+
+<h2 class="proceedings_title">Conference proceedings ({{site.categories.proceedings | size}})</h2>
+{% assign need_more = false %}
 {% for post in site.categories.proceedings %}
-    {% include proceedings_item.html %}
+    {% capture posttime %}{{ post.date | date: '%s'}}{% endcapture %}
+    {% assign posttime = posttime | plus: 0 %}
+    {% if posttime > limittime %}
+        {% include proceedings_item.html %}
+    {% else %}
+        {% assign need_more = true %}
+    {% endif %}
 {% endfor %}
+{% if need_more == true %}
+<div class="container_more_box">
+    <input type="checkbox" id="check_proc">
+    <label for="check_proc"></label>
+    <div class="more_box">
+        {% for post in site.categories.proceedings %}
+        {% capture posttime %}{{ post.date | date: '%s'}}{% endcapture %}
+        {% assign posttime = posttime | plus: 0 %}
+        {% if posttime <= limittime %}
+        {% include proceedings_item.html %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
 
-<h2 class="communications_title">Posters &amp; Talks (Last 5 years only)</h2>
+
+<h2 class="communications_title">Posters &amp; Talks ({{ site.categories.communication | size}})</h2>
+<p class="disclaimer">This list only contains the work I presented personally.</p>
+{% assign need_more = false %}
 {% for post in site.categories.communication %}
-    {% include communication_item.html %}
+    {% capture posttime %}{{ post.date | date: '%s'}}{% endcapture %}
+    {% assign posttime = posttime | plus: 0 %}
+    {% if posttime > limittime %}
+        {% include communication_item.html %}
+    {% else %}
+        {% assign need_more = true %}
+    {% endif %}
 {% endfor %}
+{% if need_more == true %}
+<div class="container_more_box">
+    <input type="checkbox" id="check_com">
+    <label for="check_com"></label>
+    <div class="more_box">
+        {% for post in site.categories.communication %}
+            {% capture posttime %}{{ post.date | date: '%s'}}{% endcapture %}
+            {% assign posttime = posttime | plus: 0 %}
+            {% if posttime <= limittime %}
+                {% include communication_item.html %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
 
 <h2 class="awards_title">Ego-boosting stuff</h2>
 {% for post in site.categories.award %}

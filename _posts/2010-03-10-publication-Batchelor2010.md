@@ -1,6 +1,5 @@
 ---
-category: publication
-type: article
+category: article
 authors: "Batchelor, R., Windle, C. J., <b>Buchoux, S.</b>, & Lorch, M."
 title: "Cholesterol and lipid phases influence the interactions between serotonin receptor agonists and lipid bilayers"
 journal: "The Journal of Biological Chemistry"

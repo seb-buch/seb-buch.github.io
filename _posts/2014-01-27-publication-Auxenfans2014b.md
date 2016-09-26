@@ -1,6 +1,5 @@
 ---
-category: publication
-type: article
+category: article
 authors: "Auxenfans, T., <b>Buchoux, S.</b>, Husson, E., & Sarazin, C."
 title: "Efficient enzymatic saccharification of Miscanthus: Energy-saving by combining dilute acid and ionic liquid pretreatments"
 journal: "Biomass and Bioenergy"

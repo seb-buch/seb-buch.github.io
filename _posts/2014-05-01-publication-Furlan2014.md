@@ -1,6 +1,5 @@
 ---
-category: publication
-type: article
+category: article
 authors: "Furlan, A. L., Jobin, M.-L., <b>Buchoux, S.</b>, Grélard, A., Dufourc, E. J., & Géan, J."
 title: "Membrane lipids protected from oxidation by red wine tannins: A proton NMR study"
 journal: "Biochimie"

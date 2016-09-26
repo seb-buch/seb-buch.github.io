@@ -1,6 +1,5 @@
 ---
-category: publication
-type: article
+category: article
 authors: "Beck, J. G., Mathieu, D., Loudet, C., <b>Buchoux, S.</b>, & Dufourc, E. J."
 title: "Plant sterols in “rafts”: a better way to regulate membrane thermal shocks"
 journal: "FASEB Journal : Official Publication of the Federation of American Societies for Experimental Biology"

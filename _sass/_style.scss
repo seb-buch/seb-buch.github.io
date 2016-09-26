@@ -201,7 +201,7 @@ h2.next_title:after {
 h2.contact_title:after {
   content: "";
 }
-h2.publications_title:after {
+h2.article_title:after {
   content: "";
 }
 h2.books_title:after {
@@ -238,6 +238,9 @@ h2.awards_title:after {
 .communications .journal{
   font-style: italic;
 }
+.communications .year{
+  font-weight: bold;
+}
 .communications .event{
   font-weight: bold;
 }
@@ -246,14 +249,14 @@ h2.awards_title:after {
   font-weight: bold;
   text-shadow: 0 0 1px rgba(0,0,0,.5);
 }
-.container .icon-box{
+.container_communication_item .icon-box{
   height: 100%;
   width: 40px;
   font-size: 20px;
   vertical-align: middle;
   display: table-cell;
 }
-.container .description{
+.container_communication_item .description{
   display: table-cell;
 }
 .contact_container {
@@ -309,4 +312,66 @@ ul.events_list li {
 }
 .tool_links li {
   margin-bottom: 0.5em;
+}
+
+
+/* Styles or more/less button support
+* from: https://www.sitepoint.com/implementing-show-moreless-functionality-with-pure-css/
+*/
+
+.container_more_box {
+  position: relative;
+  height: auto;
+  border-top: 0;
+  margin-bottom: 30px;
+  border-top: solid 1px #cccccc;
+}
+
+[type="checkbox"] {
+  position: absolute;
+  left:  -9999px;
+}
+
+label {
+  display: block;
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+label:before
+{
+  position: absolute;
+}
+
+label:before {
+  content: 'Show older ⇣';
+  left: 10px;
+}
+
+input[type="checkbox"] ~ div.more_box {
+  width: 100%;
+  display: none;
+  border-bottom: solid 1px #cccccc;
+}
+
+[type="checkbox"]:checked ~ div.more_box {
+  display: block;
+}
+
+input[type="checkbox"]:checked ~ div.more_box article {
+  height: auto;
+}
+
+[type="checkbox"]:checked + label {
+
+  position: absolute;
+  top: 100%;
+}
+
+[type="checkbox"]:checked + label:before {
+  content: 'Hide older ⇡';
 }

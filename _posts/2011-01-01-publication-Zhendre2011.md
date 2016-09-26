@@ -1,6 +1,5 @@
 ---
-category: publication
-type: article
+category: article
 authors: "Zhendre, V., Grélard, A., Garnier-LHomme, M., <b>Buchoux, S.</b>, Larijani, B., & Dufourc, E. J."
 title: "Key role of polyphosphoinositides in dynamics of fusogenic nuclear membrane vesicles"
 journal: "PLOS ONE"

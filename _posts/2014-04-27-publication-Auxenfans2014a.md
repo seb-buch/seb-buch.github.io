@@ -1,6 +1,5 @@
 ---
-category: publication
-type: article
+category: article
 authors: "Auxenfans, T., <b>Buchoux, S.</b>, Larcher, D., Husson, G., Husson, E., &amp; Sarazin, C."
 title: "Enzymatic saccharification and structural properties of industrial wood sawdust: Recycled ionic liquids pretreatments"
 journal: "Energy Conversion and Management"

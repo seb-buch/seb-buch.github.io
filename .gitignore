@@ -2,3 +2,5 @@ _site/
 .idea/
 .d8_history
 .sass-cache
+*.lock
+*~
