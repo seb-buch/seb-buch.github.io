@@ -19,6 +19,11 @@ permalink: /communications/
 {% include proceedings_item.html %}
 {% endfor %}
 
+<h2 class="article_title">Book chapter ({{ site.categories.chapter | size }})</h2>
+{% for post in site.categories.chapter %}
+{% include chapter_item.html %}
+{% endfor %}
+
 <h2 class="proceedings_title">Conference proceedings ({{site.categories.proceedings | size}})</h2>
 {% assign need_more = false %}
 {% for post in site.categories.proceedings %}
