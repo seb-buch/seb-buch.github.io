@@ -10,4 +10,5 @@ journal: "SciPy2016 proceedings"
 year: 2016
 open_access: true
 link: "http://conference.scipy.org/proceedings/scipy2016/oliver_beckstein.html"
+doi: "10.25080/majora-629e541a-00e"
 ---
