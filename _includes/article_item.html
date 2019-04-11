@@ -1,6 +1,6 @@
 <article class="publication_item" xmlns="http://www.w3.org/1999/html">
 <div>
-    <i class="fa fa-quote-left"></i>&nbsp;<span class="title">{{ post.title }}</span>&nbsp;<i class="fa fa-quote-right"></i><br/>
+    <i class="fas fa-quote-left"></i>&nbsp;<span class="title">{{ post.title }}</span>&nbsp;<i class="fas fa-quote-right"></i><br/>
     <span class="authors">{{ post.authors }}</span><br/>
     <span class="journal">{{ post.journal }}.</span>
     <span class="year">{{ post.year }}</span>
@@ -12,9 +12,9 @@
         {% assign link_icon = "fa-lock" %}
         {% assign link_title = "Sorry, the publisher does not like open access!" %}
     {% endif %}
-    <a href="http://dx.doi.org/{{ post.doi }}" target="_blank" title="{{ link_title }}">{{ post.doi }} <i class="fa {{ link_icon }}"></i></a>
+    <a href="http://dx.doi.org/{{ post.doi }}" target="_blank" title="{{ link_title }}">{{ post.doi }} <i class="fas {{ link_icon }}"></i></a>
     {% if post.pdf %}
-    &nbsp;<a href="http://dx.doi.org/{{ post.doi }}" title="PDF version of the draft" class="icon"><i class="fa fa-file-pdf-o fa-lg"></i></a>
+    &nbsp;<a href="http://dx.doi.org/{{ post.doi }}" title="PDF version of the draft" class="icon"><i class="fas fa-file-pdf fa-lg"></i></a>
     {% endif %}
 </div>
 </article>
